@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Lateralinversionrightangle {
+	public static void main(String args[]) {
+		int n;
+		Scanner get = new Scanner(System.in);// FOR TAKE INPUT
+		System.out.println("ENTER VALUE OF N");
+		n = get.nextInt();
+
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n - i; j++) { // FOR PRINTING SPACE
+				System.out.print(" ");
+			}
+			for (int j = 1; j <= i; j++) {
+				System.out.print("*");  //  FOR PRINTING STAR
+			}
+			System.out.println(); // FOR TURN TO NEXT TINE
+		}
+	}
+
+}
